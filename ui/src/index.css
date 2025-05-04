@@ -1,16 +1,51 @@
+/* Colors */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
 }
 
+/* Typography */
 body {
+  font-family: 'Arial', sans-serif;
+  /* change font size into em */
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--background-color);
   margin: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0;
 }
 
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
 
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-center {
+  text-align: center;
+}
