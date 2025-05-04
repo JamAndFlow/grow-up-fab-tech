@@ -6,11 +6,13 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { ThemeContext } from './context/ThemeContext'
 
+import './App.scss'
+
 function App() {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div className={`${theme}`}>
+    <div className={`${theme} app`}>
       <Navbar />
       <Routes>
         {/* index is used to make home default entry point */}

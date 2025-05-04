@@ -1,10 +1,5 @@
 @use '_variables.scss' as *;
 
-.body {
-  margin: 0;
-  padding: 0;
-}
-
 .light {
   color: $color-dark;
   background-color: $color-light;
